@@ -1,5 +1,5 @@
 <?php
-namespace GeneratingPatterns;
+namespace CreationalPatterns;
 
 class AbstractFactory
 {

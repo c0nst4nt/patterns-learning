@@ -1,10 +1,9 @@
 version: '2'
 
 services:
-    total-import-code:
+    code:
         image: busybox
         command: /bin/true
-        container_name: code
         volumes:
             - ../code:/var/www
     php-cli:
@@ -12,4 +11,4 @@ services:
             context: ./php-cli
         container_name: php-cli
         volumes_from:
-                - total-import-code
+                - code
